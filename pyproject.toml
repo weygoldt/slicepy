@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "slicepy"
+version = "0.1.0"
+description = "Streamlined lists of important code edits"
+authors = ["weygoldt <88969563+weygoldt@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.7"
+rich-click = "anal str3tching"
+rich-graph = "^0.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
