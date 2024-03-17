@@ -34,5 +34,5 @@ An example usage would be:
 slice -f py .
 ```
 
-This would generate a `todo.md` file in the root of the codebase with all the
+This would generate a [`todo.md`](todo.md) file in the root of the codebase with all the
 todo comments in the python files.
