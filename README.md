@@ -46,14 +46,13 @@ simply run `export OPENAI_API_KEY=<your_key>` in your terminal or add it to your
 
 ## Notes
 
-> > Can I use this without paying for the OpenAI API?
+> Can I use this without paying for the OpenAI API?
 
 Not yet but soon. I am planning to (1) simply include the comments as they are
 without summarizing them and (2) use `ollama` with a local LLM to summarize the
 comments.
 
-> > Why not simply go through the codebase and remove the TODO comments as you
-> > go?
+> Why not simply go through the codebase and remove the TODO comments as you go?
 
 I use `slicepy` mainly in during refactoring sessions. I will usually have
 intense coding sessions where I don't want to be interrupted by refactoring
@@ -64,7 +63,7 @@ refactoring the code, removing the todo comments as I go. I can then just run
 my python data science projects as well as in my latex documents and I imagine
 it would work well in other codebases too.
 
-> > Why not simply use grep?
+> Why not simply use grep?
 
 Of course I could simply use `grep` to find all the todo comments in the
 codebase and go through them manually. But I find that in many cases, it makes
