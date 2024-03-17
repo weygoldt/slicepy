@@ -17,8 +17,10 @@ streamlined markdown todo list. Nothing fancy but very handy.
 This project is pre-alpha and not yet available on pypi. To install, clone the
 repo and run `pip install .` in the root directory.
 
-````bash git clone https://github.com/weygoldt/slicepy.git && cd slicepy && pip
-install . ```
+```bash
+git clone https://github.com/weygoldt/slicepy.git && cd slicepy && pip
+install .
+```
 
 ## Usage
 
@@ -34,4 +36,3 @@ slice -f py .
 
 This would generate a `todo.md` file in the root of the codebase with all the
 todo comments in the python files.
-````
