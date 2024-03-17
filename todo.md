@@ -1,3 +1,10 @@
+
+# Refactoring tasks 📋
+
+Get yourself a cup of coffee and happy refactoring! 🚀
+
 ## slicepy/main.py
-- [ ] Add support for other files to ensure that the TODO task tracking system can work seamlessly across different file types (slicepy/main.py:93)
+- [ ] Test if the API works (slicepy/main.py:76)
+- [ ] Add support for other files (slicepy/main.py:148)
+- [ ] Add support for opening the markdown file in the terminal (slicepy/main.py:236)
 
