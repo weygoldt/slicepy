@@ -1,6 +1,6 @@
 # `slicepy`
 
-is a Streamlined Lists of Important Code Edits - A tool to manage TODO comments
+... is a **Streamlined Lists of Important Code Edits** - A tool to manage TODO comments
 in codebases.
 
 If you are like me, you have a lot of TODO comments in your code. They prevent
@@ -46,26 +46,36 @@ simply run `export OPENAI_API_KEY=<your_key>` in your terminal or add it to your
 
 ## Notes
 
-> Can I use this without paying for the OpenAI API?
+Can I use this without paying for the OpenAI API?
 
-Not yet but soon. I am planning to (1) simply include the comments as they are
-without summarizing them and (2) use `ollama` with a local LLM to summarize the
-comments.
+> Not yet but soon. I am planning to (1) simply include the comments as they are
+> without summarizing them and (2) use `ollama` with a local LLM to summarize the
+> comments.
 
-> Why not simply go through the codebase and remove the TODO comments as you go?
+Why not simply go through the codebase and remove the TODO comments as you go?
 
-I use `slicepy` mainly in during refactoring sessions. I will usually have
-intense coding sessions where I don't want to be interrupted by refactoring
-tasks. If refactoring is due, I will run `slice -f py .` and then open the
-`todo.md` file in a separate window. I will then go through the list and start
-refactoring the code, removing the todo comments as I go. I can then just run
-`slice -f py .` again to see if I missed anything. This works well in
-my python data science projects as well as in my latex documents and I imagine
-it would work well in other codebases too.
+> I use `slicepy` mainly in during refactoring sessions. I will usually have
+> intense coding sessions where I don't want to be interrupted by refactoring
+> tasks. If refactoring is due, I will run `slice -f py .` and then open the
+> `todo.md` file in a separate window. I will then go through the list and start
+> refactoring the code, removing the todo comments as I go. I can then just run
+> `slice -f py .` again to see if I missed anything. This works well in
+> my python data science projects as well as in my latex documents and I imagine
+> it would work well in other codebases too.
 
-> Why not simply use grep?
+Why not simply use grep?
 
-Of course I could simply use `grep` to find all the todo comments in the
-codebase and go through them manually. But I find that in many cases, it makes
-sense to have a summary of the comments especially if it makes sense to prioritize
-certain tasks or if they depend on each other.
+> Of course I could simply use `grep` to find all the todo comments in the
+> codebase and go through them manually. But I find that in many cases, it makes
+> sense to have a summary of the comments especially if it makes sense to prioritize
+> certain tasks or if they depend on each other.
+
+## Other useful tools
+
+- [folke/todo-comments.nvim](https://github.com/folke/todo-comments.nvim) - A
+  neovim plugin to manage todo comments in codebases. This is a great tool and
+  also provides a summary of all the comments in a codebase including easy
+  navigation between them. I use this in my neovim setup and it is great.
+  The drawback is, that my comments often only make sense in the context of the
+  sourrounding code, so I find it useful to have a summary of the comments in a
+  seperate file to get an overview of the tasks at hand.
